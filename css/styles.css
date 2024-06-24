@@ -1,6 +1,33 @@
-body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
     font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+}
+:root {
+    --bg-color: #61122f;
+    --second-bg-color: #b6830c;
+    --text-color: white; 
+    --main-color: #ffdf50;
+}
+body {
+    color: #fff;
+    background-color: var(--bg-color)
+}
+#header-nav {
+    background-color: var(--second-bg-color);
+    border-radius: 0;
+    border: 0;
+    height: 50px;
+}
+#logo-img {
+    background:url('')  no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
 }
