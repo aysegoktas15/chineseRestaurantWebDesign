@@ -23,11 +23,11 @@ body {
     background-color: var(--second-bg-color);
     border-radius: 0;
     border: 0;
-    height: 50px;
+    height: 160px;
 }
 #logo-img {
-    background:url('')  no-repeat;
+    background:url('images/logo.png')  no-repeat;
     width: 150px;
     height: 150px;
-    margin: 10px 15px 10px 0;
+    margin: 0 15px 10px 5px;
 }
