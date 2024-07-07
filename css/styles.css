@@ -108,15 +108,27 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(85, 124, 62, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.container {
+    display: flex;
+    align-content: center;
+}
 
+/* LARGE DEVİCES ONLY*/
+@media (min-width:1200px) {
+    .jumbotron {
+        background: url('../images/restaurant-1200.jpg') no-repeat;
+        box-shadow: 0 0 50px #3F0C1F;
+        width: 1200px;
+        height: 800px;
+        border: 2px solid #3F0C1F;   
+    }
+    #main-content {
+        padding-top: 40px;
+    }
+}
 
-
-
-
-
-
-
-@media (max-width: 991px) {
+/* MEDIUM DEVİCES ONLY*/
+@media (min-width: 992px) and (max-width:1199px) {
     #header-nav {
         padding: 5px 0;
         padding-right: 2px;
@@ -144,8 +156,19 @@ body {
         margin-right: 1px;
         border-radius: 4px;
     }
+    .jumbotron {
+        background: url('../images/restaurant-992.jpg') no-repeat;
+        box-shadow: 0 0 50px #3F0C1F;
+        height: 661px;
+        width: 992px;
+        border: 2px solid #3F0C1F;   
+    }
+    #main-content {
+        padding-top: 20px;
+    }
 }
-@media (max-width: 767px) {
+/* SMALL DEVİCES ONLY*/
+@media (min-width: 768px) and (max-width: 991px) {
     .navbar-nav .nav-link {
         padding-top: 10px;
         height: 80px;
@@ -174,4 +197,16 @@ body {
         text-align: center;
         padding-right: 0;
     }
+    .jumbotron {
+        background: url('../images/restaurant-768.jpg') no-repeat;
+        box-shadow: 0 0 50px #3F0C1F;
+        height: 512px;
+        width: 768px;
+        border: 2px solid #3F0C1F;   
+    }
+    #main-content {
+        padding-top: 20px;
+    }
 }
+
+/* EXTRA SMALL DEVİCES ONLY*/
