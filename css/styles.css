@@ -115,7 +115,7 @@ body {
 
 /* LARGE DEVİCES ONLY*/
 @media (min-width:1200px) {
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-1200.jpg') no-repeat;
         box-shadow: 0 0 50px #3F0C1F;
         width: 1200px;
@@ -123,7 +123,7 @@ body {
         border: 2px solid #3F0C1F;   
     }
     #main-content {
-        padding-top: 40px;
+        padding-top: 60px;
     }
 }
 
@@ -156,7 +156,7 @@ body {
         margin-right: 1px;
         border-radius: 4px;
     }
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-992.jpg') no-repeat;
         box-shadow: 0 0 50px #3F0C1F;
         height: 661px;
@@ -164,7 +164,23 @@ body {
         border: 2px solid #3F0C1F;   
     }
     #main-content {
-        padding-top: 20px;
+        padding-top: 40px;
+    }
+    /**/
+    #call-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: solid white 2px;
+        background-color: var(--second-bg-color);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px; 
+        margin: 30px 30px 0 30px;
+    }
+    #call-btn a {
+        color: white;
+        text-decoration: none; 
     }
 }
 /* SMALL DEVİCES ONLY*/
@@ -197,7 +213,7 @@ body {
         text-align: center;
         padding-right: 0;
     }
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-768.jpg') no-repeat;
         box-shadow: 0 0 50px #3F0C1F;
         height: 512px;
@@ -205,8 +221,46 @@ body {
         border: 2px solid #3F0C1F;   
     }
     #main-content {
-        padding-top: 20px;
+        padding-top: 40px;
+    }
+    #call-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: solid white 2px;
+        background-color: var(--second-bg-color);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px; 
+        margin: 20px 20px 0 20px;
+    }
+    #call-btn a {
+        color: white;
+        text-decoration: none; 
     }
 }
 
 /* EXTRA SMALL DEVİCES ONLY*/
+@media (max-width: 767px) {
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    }
+    #call-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: solid white 2px;
+        background-color: var(--second-bg-color);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px; 
+        margin: 10px 10px 0 10px;
+    }
+    #call-btn a {
+        color: white;
+        text-decoration: none; 
+    }
+}
