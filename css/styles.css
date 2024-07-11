@@ -107,11 +107,35 @@ body {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(85, 124, 62, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+/*End Header*/
 
-.container {
+/*Home Page*/
+
+.jumbotron {
+    display: flex;
+    align-content: center;
+    margin-bottom: 40px;
+}
+#home-tiles {
     display: flex;
     align-content: center;
 }
+ 
+#menu-tile, #special-tile, #map-tile {
+
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #special-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
+
+
+ 
 
 /* LARGE DEVİCES ONLY*/
 @media (min-width:1200px) {
@@ -121,6 +145,8 @@ body {
         width: 1200px;
         height: 800px;
         border: 2px solid #3F0C1F;   
+        display: flex;
+        align-content: center;
     }
     #main-content {
         padding-top: 60px;
@@ -162,6 +188,9 @@ body {
         height: 661px;
         width: 992px;
         border: 2px solid #3F0C1F;   
+        display: flex;
+        align-content: center;
+        margin-bottom: 30px;
     }
     #main-content {
         padding-top: 40px;
@@ -219,6 +248,9 @@ body {
         height: 512px;
         width: 768px;
         border: 2px solid #3F0C1F;   
+        display: flex;
+        align-content: center;
+        margin-bottom: 30px;
     }
     #main-content {
         padding-top: 40px;
@@ -247,6 +279,9 @@ body {
         padding: 0;
         box-shadow: 0 0 50px #3F0C1F;
         border: 2px solid #3F0C1F;
+        display: flex;
+        align-content: center;
+        margin-bottom: 30px;
     }
     #call-btn {
         display: inline-block;
