@@ -183,48 +183,7 @@ body {
 }
 /*Footer End*/
 
-/*Menu Categories Page*/
-h2#menu-categories-title {
-    margin-top: 50px;
-    font-size: 1.8em;
-    color: var(--second-text-color);
-    font-family: 'Lora', serif;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.category-tile {
-    position: relative;
-    border: 2px solid #3F0C1F;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    margin: 0 0 15px 0;
-}
-.category-tile span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    background-color: #000;
-    color: #fff;
-    opacity: 0.7;
-}
 
-.category-tile:hover {
-    box-shadow: 0 1px 5px 1px #ccc;
-}
-#menu-categories-title + div {
-    margin-bottom: 50px;
-}
-.category-tile img {
-    width: 100%;
-    height: auto;
-    transition: 0.3s;
-    object-fit: cover;
-}
 
 /* LARGE DEVİCES ONLY*/
 @media (min-width:1200px) {
