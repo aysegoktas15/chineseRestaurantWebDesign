@@ -442,4 +442,9 @@ body {
         float: left;
         width: 100%;
     }
+    .category {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
 }
