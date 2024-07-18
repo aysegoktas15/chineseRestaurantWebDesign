@@ -214,6 +214,26 @@ body {
     align-items: center;
 }
 
+
+/*menuitem*/
+.nav-link.active {
+    background-color: #557c3e;
+    border-radius: 16px;
+    border: 2px;
+    border-color: var(--second-bg-color);
+}
+.nav-link:hover {
+    background-color: #557c3e;
+    border-radius: 16px;
+    border: 2px;
+    border-color: var(--second-bg-color);
+    transition:calc(0.1);
+}
+#call-btn:hover {
+    transition:calc(0.1);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px var(--main-color)
+}
 /* LARGE DEVİCES ONLY*/
 @media (min-width:1200px) {
     .container .jumbotron {
