@@ -404,7 +404,7 @@ body {
     }
 
 }
-@media(max-width:478px) {
+@media(max-width:500px) {
     .container .jumbotron {
         margin-top: 20px;
         padding: 0;
@@ -439,12 +439,15 @@ body {
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px;
-        float: left;
         width: 100%;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
     }
     .category {
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
     }
 }
