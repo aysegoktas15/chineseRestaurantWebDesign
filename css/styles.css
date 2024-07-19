@@ -233,13 +233,23 @@ body {
     transform: scale(1.02);
     box-shadow: 0 0 10px var(--main-color)
 }
+.nav-item {
+    padding-left: 2px;
+    padding-top: 4px;
+}
+.nav-item.active {
+    background-color: #557c3e;
+    border-radius: 16px;
+    border: 2px;
+    border-color: var(--second-bg-color);
+}
 
 /*single-menu-item*/
 .menu-item-tile {
     margin-bottom: 25px;
 }
 .container .menu-item-tile hr {
-    width: 80%;
+    width: 84%;
     margin: 0 auto;
 }
 .menu-item-tile .menu-item-price {
