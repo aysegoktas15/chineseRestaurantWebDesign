@@ -1,0 +1,118 @@
+//Adjusting Development Environment for Javascript Development
+//Where to Place Javascript Code 
+	//Head
+	<script></script>
+	<script src=""></script>
+	//Body
+	<script></script>
+//Defining Variables,Functions and Scope
+  //Variables Definitions
+	var message = "hi";
+	//always starts with 'var' 
+  *No types are declared 
+  *Js is dynamically typed language
+  *Same variable can hold different types during the life of the execution 
+  //Functions Definitions
+	function a () {
+	  ...
+	} 
+	----------------------------------------------------
+	var a = function () {...}
+	//a : value of function assigned, NOT the returned result!
+	//function : no name defined 
+
+	a(); //Function Execution or Function Invocation
+	----------------------------------------------------
+	funtion compare (x, y) {
+	  return x > y; //followed by value,use 'return'
+	}
+	----------------------------------------------------
+	function compare (x, y) {...}
+	var a = compare (4, 5);
+	compare (4, "a");
+	compare();
+  *All arguments defined in a Javascript function are optional.
+  
+  //Scope Definitions 
+    --Global
+    --Function(aka lexical)
+
+  *(Lexical means that it depends on where something is physically defined.)
+  *There is no block scope in Javascript.
+
+  **Global
+    -Variables and functions defined here are available eveywhere.
+
+  **Function(aka lexical)
+    -Variables and functions defined here are available only within this function.
+  	
+  //Scope Chain Definitions 
+  *Everything is executed in a Execution Context.
+  *Function invocation creates a new Execution Context.
+  *Each Exacution Context has:
+   -Its own Variable Environment 
+   -Special 'this' object
+   -Reference to its Outer Environment
+  *Global scope does not have an Outer Environment as it's the most outer there is.
+ ?How scope chain works?
+ -Referenced(not defined) variable will be searched for in its current scope first. 
+ If not found, the Outer Reference will be searched. 
+ If not found, the Outer Reference's Outer Reference will be searched,etc. 
+ This will keep going until the Global scope.
+ If not found in Global scope, the variable is undefined.
+
+------------------------------------------------------------
+/*Sample*/
+
+//Global scope
+var num = 2;
+A();
+//Function A
+var num = 5;
+B();
+//Function B
+console.log(x);
+//result will be x=2. B is defined within Global scope.
+------------------------------------------------------------
+
+  *Defining variables - dynamically typed
+  *Defining functions - creates its own scope(lexical)
+  *Js code runs within a Execution Context
+  *Scope chain is used to retrieve varibles from Outer Variable Environments 
+
+
+//Javascript Types 
+  //Types
+  *A type is a particular data structure.
+    *Each language defines some built-in types.(Yerleşik türler)
+    *Built-in types can be used to build other data structures
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
