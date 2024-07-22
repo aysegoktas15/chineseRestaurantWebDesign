@@ -86,18 +86,57 @@ console.log(x);
   *A type is a particular data structure.
     *Each language defines some built-in types.(Yerleşik türler)
     *Built-in types can be used to build other data structures
+    *Js has 7 built-in types: 6 primitive and 1 object type 
 
+    //Object Type
+      *Object is a collection of name/value pairs(pair : çift)
+------------------------------------------------------------
+/*Sample*/
 
+firstName: "Ayse";
+lastName: "Goktas";
+social: {
+	  linkedin : "aysegoktas15",
+	  twitter : "aysegoktas15",
+	  facebook : "aysegoktas15"
+	}
+// name : {value}
+//object type can be a nested type!
+------------------------------------------------------------
+	
+    //Primitive Types(İlkel tip)
+      *Primitive type represents a single, immutable value.(immutable : değişmez)
+      *Single value, i.e., Not an object!
+      *Immutable means once it is set, it cannot be chnaged.
+        *Value becomes read-only.
+        *You can create another value based on an existing one(but the memory space that was allocated for the first value is not changed. Instead, you can create a new memory space for the new value.) 
 
+	  //Boolean 
+	  *Booleand can only have 2 values: true or false
 
+	  //Undefined
+	  *Undefined signifies that no value has ever been set	
+	  *The variable in memory when it defined but has never been assigned any value yet.
+	  *Can only have one value : undefined
+	  *You can set a variable to undefined but you should NEVER do it. Its meaning is that it is never been defined, so defining it to undefined is counter to its core meaning  
 
+	  //Null
+	  *Null signifies lack of value.
+	  *As opposed to undefined, which is lack of definition.
+	  *Can only have one value : null (reserved keyword)
+	  *It is okay to explicitly set a variable to null.
 
+	  //Number
+	  *Number is the only numeric type in Javascprit.
+	  *Always represented under the hood as double-precision 64-bit floating point.
+	  *Js does not have an integer type !
+	  *Integers are a subset of doubles instead of separate data type.(subset : alt küme )
 
+	  //String 
+	  *String is sequence of characters used to represent text.(sequence : sıra, dizi)
+	  *Use either single or double quotes, i.e., 'text', or "text"
 
-
-
-
-
+	  //Symbol????
 
 
 
