@@ -1,3 +1,7 @@
+-----------------------------------------------------------------------------------
+-------------------------------BASICS OF JAVASCRIPT--------------------------------
+-----------------------------------------------------------------------------------
+
 //Adjusting Development Environment for Javascript Development
 //Where to Place Javascript Code 
 	//Head
@@ -80,6 +84,9 @@ console.log(x);
   *Js code runs within a Execution Context
   *Scope chain is used to retrieve varibles from Outer Variable Environments 
 
+-----------------------------------------------------------------------------------
+----------------------JS TYPES AND COMMON LANGUAGE CONSTRUCTS----------------------
+-----------------------------------------------------------------------------------
 
 //Javascript Types 
   //Types
@@ -137,6 +144,130 @@ social: {
 	  *Use either single or double quotes, i.e., 'text', or "text"
 
 	  //Symbol????
+	
+	//resume
+	  --Js defines 7 built-in types : Object and 6 Primitives
+	  --Object type is a collection of name/value pairs
+	  --Primitive type can contain a single, immutable value(immutable : değişmez)
+	  --Undefined means variable memory has been allocated but no value has ever been explicitly set yet.(allocated : tahsis edilmiş, explicitly : açıkça)
+
+//Common Language Constructs
+  ////String Concatenation (Dize Birleştirme)( += Operator)
+	var string = "Hello";
+	string += " World"; 
+	console.log(string + "!");
+	--> Hello world!
+  ----------------------------------------------------------
+  ////Regular Math Operators ( +, -, *, /)
+	console.log((5+4)/3);
+	--> 3 
+	------------------
+	console.log(undefined/3);
+	--> NaN (A special symbol)(Not a Number)
+  ----------------------------------------------------------
+  ////Equality( == )
+	console.log((5+4)/3);
+	--> 3 
+	console.log(undefined/3);
+	--> NaN (A special symbol)(Not a Number)
+	------------------
+	var x = 4, y = 4;
+	if (x == y) {
+	    console.log("x = y");
+	    }
+	--> x = y
+
+	x = "4";
+	if (x == y) {
+	    console.log("x = y");
+	    }
+	--> x = y 
+	//When the Js tries to evaluate this equality, it converts one of the types to be the same type as the other variable and only then compares the values.
+  ----------------------------------------------------------
+  ////Strict Equality( === )
+	var y = 4;
+	var x = "4";
+	if (x === y) {
+	    console.log("x = y");
+	    }
+	else {
+	    console.log("x != y");
+	    }
+	--> x != y 
+	//First it will compare their types. If it is not the same type, it is not going to compare them anymore.
+  ----------------------------------------------------------
+  ////If Statements ( All False )
+	if ( false || null || undefined || "" || 0 || NaN) {
+	    console.log("This line will not ever execute.");
+	else {
+	    console.log(" All false ");
+	    }
+  ----------------------------------------------------------
+  ////If Statements ( All True )
+	if ( true & "hello" & 1 & -1 & "false" ) {
+	    console.log("This line will not ever execute.");
+	else {
+	    console.log(" All true ");
+	    }
+  ----------------------------------------------------------
+  ////For Loop
+	var sum = 0;
+	for (var i = 0; i < 10; i++ ) {
+	  console.log(i);
+	  sum += i;
+	  }
+	console.log("sum: " + sum);
+------------------------------------------------------------
+
+
+//Handling Default Values 
+
+  function orderChickenWith(sideDish) {
+    sideDish = sideDish || "whatever";
+    console.log("Chicken with " + sideDish);
+    }
+  orderChickenWith("noodles");
+  orderChickenWith(); 
+
+  -->Chicken with noodles
+  -->Chicken with whatever!
+
+-----------------------------------------------------------------------------------
+------------------------OBJECTS AND FUNCTIONS IN JAVASCRIPT------------------------
+-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
